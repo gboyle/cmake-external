@@ -30,4 +30,5 @@
 
 # dependency tarballs
 *.tar.gz
-*.src.tgz
+*-src.tgz
+
