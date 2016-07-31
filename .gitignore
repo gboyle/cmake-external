@@ -27,3 +27,7 @@
 *.exe
 *.out
 *.app
+
+# dependency tarballs
+*.tar.gz
+*.src.tgz
