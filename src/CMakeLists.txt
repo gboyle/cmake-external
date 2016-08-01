@@ -81,7 +81,7 @@ ExternalProject_Add(
 ExternalProject_Add(
   xerces
   DEPENDS icu curl
-  #URL http://mirror.its.dal.ca/apache//xerces/c/3/sources/xerces-c-3.1.4.tar.gz
+  #URL http://apache.mirror.vexxhost.com//xerces/c/3/sources/xerces-c-3.1.4.tar.gz
   URL_HASH SHA256=c98eedac4cf8a73b09366ad349cb3ef30640e7a3089d360d40a3dde93f66ecf6 
   URL ${PROJECT_SOURCE_DIR}/depends/xerces-c-3.1.4.tar.gz
   CONFIGURE_COMMAND ./configure --prefix=${CMAKE_BINARY_DIR}
@@ -90,7 +90,7 @@ ExternalProject_Add(
 
 ExternalProject_Add(
   ghostscript  
-  #URL https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs919/gs919w32.exe
+  #URL https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs919/ghostscript-9.19.tar.gz
   URL ${PROJECT_SOURCE_DIR}/depends/ghostscript-9.19.tar.gz
   URL_HASH SHA1=695c56ecb296e9a0d97bc885c3180b0538aafbf5
   CONFIGURE_COMMAND ./configure --prefix=${CMAKE_BINARY_DIR} --with-libiconv=no --without-libidn --without-jasper --disable-gtk --disable-cups --with-x=no
